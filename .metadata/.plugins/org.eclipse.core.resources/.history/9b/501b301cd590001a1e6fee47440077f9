@@ -1,0 +1,17 @@
+package com.nicolas.app.ruleta.models.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.nicolas.app.ruleta.models.entity.Ruleta;
+
+public class ApuestaServiceImpl implements ApuestaService{
+	
+	@Autowired
+	
+	
+	@Override
+	public Long crear(Ruleta ruleta) {
+		return null;
+	}
+
+}

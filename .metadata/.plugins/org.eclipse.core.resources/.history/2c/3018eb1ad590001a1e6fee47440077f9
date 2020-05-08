@@ -1,0 +1,13 @@
+package com.nicolas.app.ruleta.models.service;
+
+import org.springframework.stereotype.Service;
+
+import com.nicolas.app.ruleta.models.entity.Ruleta;
+
+@Service
+public interface ApuestaService {
+
+	public Long crear(Ruleta ruleta);
+	public List<A>
+	
+}

@@ -1,0 +1,2 @@
+spring.application.name=servicio-ruleta
+server.port=8002

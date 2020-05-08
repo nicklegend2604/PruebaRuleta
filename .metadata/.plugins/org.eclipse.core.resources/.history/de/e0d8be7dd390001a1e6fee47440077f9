@@ -1,0 +1,10 @@
+package com.nicolas.app.ruleta.models.entity;
+
+import java.util.List;
+
+public class Ruleta {
+
+	private Long id;
+	private List<Apuesta> apuestas;
+	private Boolean abierta;
+}

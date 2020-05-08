@@ -1,0 +1,32 @@
+package com.nicolas.app.ruleta.models.entity;
+
+import java.util.List;
+
+public class Ruleta {
+
+	private Long id;
+	private List<Apuesta> apuestas;
+	private Boolean abierta;
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public List<Apuesta> getApuestas() {
+		return apuestas;
+	}
+	public void setApuestas(List<Apuesta> apuestas) {
+		this.apuestas = apuestas;
+	}
+	public Boolean getAbierta() {
+		return abierta;
+	}
+	public void setAbierta(Boolean abierta) {
+		this.abierta = abierta;
+	}
+	
+	
+	
+}

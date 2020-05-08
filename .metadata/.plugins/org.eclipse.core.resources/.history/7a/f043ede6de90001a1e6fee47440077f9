@@ -1,0 +1,53 @@
+package com.nicolas.app.ruleta.models.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.nicolas.app.ruleta.models.dao.RuletaDao;
+import com.nicolas.app.ruleta.models.entity.Apuesta;
+import com.nicolas.app.ruleta.models.entity.Ruleta;
+
+@Service
+public class RuletaServiceImpl implements RuletaService {
+
+	@Autowired
+	private RuletaDao ruletaDao;
+
+	@Override
+	@Transactional
+	public Long crear(Ruleta ruleta) {
+		return ruletaDao.save(ruleta).getId();
+	}
+
+	@Override
+	@Transactional(readOnly = true)
+	public List<Ruleta> encontrarTodos() {
+		return (List<Ruleta>) ruletaDao.findAll();
+	}
+
+	@Override
+	@Transactional
+	public Boolean abrir(Long id) {
+		Ruleta ruleta = ruletaDao.findById(id).orElse(null);
+		if (ruleta != null) {
+			ruleta.setAbierta(true);
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public Boolean apostar(Long idRuleta, Apuesta apuesta) {
+		Ruleta ruleta = ruletaDao.findById(idRuleta).orElse(null);
+		if (ruleta != null) {
+			ruleta.getApuestas().add(apuesta);
+			ruletaDao.save(ruleta);
+			return true;
+		}
+		return false;
+	}
+
+}

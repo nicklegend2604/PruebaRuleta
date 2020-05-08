@@ -1,0 +1,12 @@
+package com.nicolas.app.ruleta.models.service;
+
+import com.nicolas.app.ruleta.models.entity.Ruleta;
+
+public class ApuestaServiceImpl implements ApuestaService{
+
+	@Override
+	public Long crear(Ruleta ruleta) {
+		return null;
+	}
+
+}

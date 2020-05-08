@@ -1,0 +1,8 @@
+package com.nicolas.app.ruleta.util;
+
+public class Constantes {
+	
+	public static final String EXITOSO = "exitoso";
+	public static final String ID_RULETA = "idRuleta";
+
+}

@@ -1,0 +1,8 @@
+package com.nicolas.app.ruleta.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class RuletaController {
+
+}

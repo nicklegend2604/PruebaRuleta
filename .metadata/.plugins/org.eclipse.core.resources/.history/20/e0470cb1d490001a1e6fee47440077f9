@@ -1,0 +1,5 @@
+package com.nicolas.app.ruleta.models.dao;
+
+public interface ApuestaDao {
+
+}

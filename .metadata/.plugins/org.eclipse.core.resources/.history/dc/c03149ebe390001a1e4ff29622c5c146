@@ -1,0 +1,20 @@
+package com.nicolas.app.ruleta.models.service;
+
+import java.util.List;
+
+import com.nicolas.app.ruleta.models.entity.Apuesta;
+import com.nicolas.app.ruleta.models.entity.Ruleta;
+
+public interface RuletaService {
+
+	public Long crear(Ruleta ruleta);
+
+	public List<Ruleta> encontrarTodos();
+
+	public void abrir(Long id) throws Exception;
+
+	public void apostar(Long idRuleta, Apuesta apuesta) throws Exception;
+
+	public void cerrar(Long id) throws Exception;
+
+}

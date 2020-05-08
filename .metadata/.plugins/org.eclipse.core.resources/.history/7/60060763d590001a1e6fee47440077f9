@@ -1,0 +1,5 @@
+package com.nicolas.app.ruleta.models.service;
+
+public interface RuletaService {
+
+}

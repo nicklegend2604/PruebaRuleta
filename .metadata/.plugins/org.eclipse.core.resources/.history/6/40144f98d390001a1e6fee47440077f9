@@ -1,0 +1,10 @@
+package com.nicolas.app.ruleta.models.entity;
+
+public class Apuesta {
+	
+	private Long id;
+	private Long idUsuario;
+	private Double cantidad;
+	
+
+}
