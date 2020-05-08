@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "45f3b26c-dbdc-433a-9856-09f1bac08edc",
+		"name": "Prueba Ruleta",
+		"description": "Endpoints para la prueba de API Ruleta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListarRuletas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/ruletas",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"ruletas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearRuletas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/ruletas",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"ruletas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Abrir",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/ruletas/abrir/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"ruletas",
+						"abrir",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apostar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "idUsuario",
+						"value": "666",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cantidad\": 10000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/ruletas/apostar/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"ruletas",
+						"apostar",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cerrar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/ruletas/cerrar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"ruletas",
+						"cerrar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
